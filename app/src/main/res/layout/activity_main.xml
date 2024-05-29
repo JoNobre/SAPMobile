@@ -156,6 +156,25 @@
 
                 tools:ignore="TextSizeCheck" />
 
+            <Button
+
+                android:id="@+id/btalterardados"
+
+                android:layout_width="200dp"
+
+                android:layout_height="wrap_content"
+
+                android:text="@string/alterar_dados"
+
+                tools:ignore="TextSizeCheck" />
+
+            <Button
+                android:id="@+id/btexcluirdados"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="@string/excluir_dados"
+                tools:ignore="TextSizeCheck" />
+
 
 
         </LinearLayout>
