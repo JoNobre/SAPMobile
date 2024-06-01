@@ -9,12 +9,13 @@
     <string name="cadastro_de_usu_rio">Cadastro de Usuário</string>
     <string name="telefone">Telefone:</string>
     <string name="nome">Nome:</string>
+    <string name="senha">Senha:</string>
     <string name="esta_aplica_o_ir_registrar_as_informa_es_do_usu_rio_no_banco_de_dados">Esta aplicação irá registrar as informações do usuário no Banco de Dados.</string>
     <string name="digite_seu_nome">Digite seu nome</string>
-    <string name="digite_seu_telefone">Digite seu telefone</string>
-    <string name="digite_seu_email">Digite seu email</string>
-    <string name="cadastrar_dados">Cadastrar Dados</string>
-    <string name="cadastrar_dados2">Cadastrar Dados (2ª Edição)</string>
+    <string name="novo_personagem">Novo Personagem</string>
+    <string name="personagens">Personagens</string>
+    <string name="reg_usuario">Registrar</string>
+    <string name="fazer_login">Fazer Login</string>
     <string name="status">#status</string>
     <string name="consultar_dados">Consultar Dados</string>
     <string name="nomeConsulta">[Nome]</string>
@@ -29,4 +30,10 @@
     <string name="nomeColchetes">[Nome]</string>
     <string name="telefoneColchetes">[Telefone]</string>
     <string name="emailColchetes">[EMail]</string>
+    <string name="digite_sua_senha">Digite sua senha</string>
+    <string name="nome_personagem">Digite o nome do personagem</string>
+    <string name="descricao">Descrição:</string>
+    <string name="desc_chara">Descreva o personagem</string>
+    <string name="add_chara">Adicionar</string>
+    <string name="limpaus">Limpar Usuários</string>
 </resources>

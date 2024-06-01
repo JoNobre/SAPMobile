@@ -18,6 +18,8 @@ public class ConsultaDadosActivity extends AppCompatActivity {
     ImageView imgprimeiro, imganterior, imgproximo, imgultimo;
     int indice;
     Cursor c;
+    android.app.AlertDialog.Builder dialogo = new android.app
+            .AlertDialog.Builder(ConsultaDadosActivity.this);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

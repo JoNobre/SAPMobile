@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+
+    android:orientation="vertical" >
+
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:background="#608b55" >
+
+        <ImageView
+
+            android:id="@+id/imageView1"
+
+            android:layout_width="96dp"
+
+            android:layout_height="96dp"
+
+            android:src="@drawable/sap_logo"
+
+            android:contentDescription="@string/todo" />
+
+
+        <LinearLayout
+
+            android:id="@+id/layoutCorFundo"
+
+            android:layout_width="fill_parent"
+
+            android:layout_height="match_parent"
+
+            android:background="#608b55"
+
+            android:gravity="center"
+            android:orientation="horizontal" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+
+        android:id="@+id/layoutImagemFundo"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="fill_parent"
+
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="@string/nome"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/chnome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/nome_personagem"
+            android:inputType="text"/>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="@string/descricao"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/chdesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/desc_chara"
+            android:inputType="textMultiLine" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/btregistra_ch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/add_chara" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
