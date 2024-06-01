@@ -46,21 +46,7 @@
 
             />
 
-        <LinearLayout
 
-            android:id="@+id/layoutCorFundo"
-
-            android:layout_width="fill_parent"
-
-            android:layout_height="match_parent"
-
-            android:background="#608b55"
-
-            android:gravity="center" >
-
-
-
-        </LinearLayout>
 
     </LinearLayout>
 
