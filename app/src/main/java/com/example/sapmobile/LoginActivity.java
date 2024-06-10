@@ -14,7 +14,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class LoginActivity extends AppCompatActivity {
 
-    Button btlogin_us;
+    Button btlogin_us,btvoltar;
     EditText usnome, ussenha;
     SQLiteDatabase db;
     Cursor c;
@@ -41,6 +41,13 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String nome = usnome.getText().toString();
                 String senha = ussenha.getText().toString();
+                btvoltar = (Button) findViewById(R.id.btvoltar);
+                btvoltar.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        finish();
+                    }
+                });
 
                 try {
                     db = openOrCreateDatabase

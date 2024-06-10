@@ -109,6 +109,12 @@
 
                 tools:ignore="TextSizeCheck" />
 
+            <Button
+                android:id="@+id/btvoltar"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="@string/voltar" />
+
 
 
         </LinearLayout>

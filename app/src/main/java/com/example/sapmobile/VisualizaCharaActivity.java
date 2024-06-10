@@ -20,6 +20,7 @@ public class VisualizaCharaActivity extends AppCompatActivity {
     int indice, numreg;
     Cursor c;
     Button btalterardados, btexcluirdados;
+    Button btvoltar;
     DialogInterface.OnClickListener diAlteraInformacoes;
     DialogInterface.OnClickListener diExcluiRegistro;
 
@@ -41,6 +42,7 @@ public class VisualizaCharaActivity extends AppCompatActivity {
 
         btalterardados = (Button) findViewById(R.id.btalterardados);
         btexcluirdados = (Button) findViewById(R.id.btexcluirdados);
+        btvoltar = (Button) findViewById(R.id.btvoltar);
         try {
             db = openOrCreateDatabase
                     ("banco_dados", Context.MODE_PRIVATE, null);
@@ -66,6 +68,12 @@ public class VisualizaCharaActivity extends AppCompatActivity {
             }
         } catch (Exception e) {
         }
+        btvoltar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
         imgprimeiro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

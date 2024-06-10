@@ -19,6 +19,8 @@ public class RegistraUsuarioActivity extends AppCompatActivity {
     EditText usnome, ussenha;
     SQLiteDatabase db;
     Cursor c;
+    Button btvoltar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,6 +29,13 @@ public class RegistraUsuarioActivity extends AppCompatActivity {
         btcadastrar_us = (Button) findViewById(R.id.btcadastrar_us);
         usnome = (EditText) findViewById(R.id.usnome);
         ussenha = (EditText) findViewById(R.id.ussenha);
+        btvoltar = (Button) findViewById(R.id.btvoltar);
+        btvoltar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
 
         try {
             db = openOrCreateDatabase("banco_dados",

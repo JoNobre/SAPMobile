@@ -36,4 +36,5 @@
     <string name="desc_chara">Descreva o personagem</string>
     <string name="add_chara">Adicionar</string>
     <string name="limpaus">Limpar Usuários</string>
+    <string name="voltar">Voltar</string>
 </resources>

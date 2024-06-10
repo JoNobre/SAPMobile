@@ -13,7 +13,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 
 public class RegistraCharaActivity extends AppCompatActivity {
-    Button btregistra_ch;
+    Button btregistra_ch, btvoltar;
     EditText chnome, chdesc;
     SQLiteDatabase db;
 
@@ -25,6 +25,13 @@ public class RegistraCharaActivity extends AppCompatActivity {
         btregistra_ch = (Button) findViewById(R.id.btregistra_ch);
         chnome = (EditText) findViewById(R.id.chnome);
         chdesc = (EditText) findViewById(R.id.chdesc);
+        btvoltar = (Button) findViewById(R.id.btvoltar);
+        btvoltar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
         try {
             db = openOrCreateDatabase("banco_dados",
                     Context.MODE_PRIVATE,null);

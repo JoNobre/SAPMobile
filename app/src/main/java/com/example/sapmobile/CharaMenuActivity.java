@@ -14,7 +14,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class CharaMenuActivity extends AppCompatActivity {
 
-    Button btnovochara, btvisualizachara;
+    Button btnovochara, btvisualizachara, btvoltar;
     SQLiteDatabase db;
 
     @Override
@@ -24,6 +24,13 @@ public class CharaMenuActivity extends AppCompatActivity {
 
         btnovochara = (Button) findViewById(R.id.btnovochara);
         btvisualizachara = (Button) findViewById(R.id.btvisualizachara);
+        btvoltar = (Button) findViewById(R.id.btvoltar);
+        btvoltar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
 
         btnovochara.setOnClickListener(new View.OnClickListener() {
             @Override
